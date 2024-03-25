@@ -1,2 +1,4 @@
-# Contador1_js
+# Cronometro-JS
+
+Um conometro simples utilizando JavaScript.
  
