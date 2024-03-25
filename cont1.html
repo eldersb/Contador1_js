@@ -15,15 +15,19 @@
     </header>
      
     <div class="box">
-        <div class="conteudo"><p>Cronômetro</p><div>
-          <div class="tempo">
-              <span id="hora">0</span>:
-              <span id="minuto">0</span>:
-              <span id="segundo">0</span>
-          </div>
-          <button id="start" onclick="start()">INICIAR</button>
-          <button id= "pause" onclick="pause()">PARAR</button>
-          <button id="reset" onclick="reset()">REINICIAR</button>
+        <div class="box-child">
+            <div class="tempo">
+             <span id="hora1">0 </span> <span id="hora">0</span> :
+              <span id="minuto1">0 </span> <span id="minuto">0</span>:
+              <span id="segundo1">0 </span> <span id="segundo">0</span> 
+            </div>
+            <div class="botao">
+                <button id="start" onclick="start()">INI</button>
+                <button id= "pause" onclick="pause()">STOP</button>
+                <button id="reset" onclick="reset()">REST</button>
+            </div>
+
+        </div>
   </div>
 
     <script src="cont1.js"></script>
