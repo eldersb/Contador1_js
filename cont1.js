@@ -52,74 +52,34 @@
      document.getElementById('minuto1').innerText = '0';
      document.getElementById('segundo1').innerText = '0';
 
- }
-
- function timer() { 
-     if(segundo === 10){
-         segundo = 0;
-          elemento4.innerHTML = segundo1++;
-     } 
-    if(segundo1 === 6){
-      segundo1 = 0;
-      elemento2.innerHTML = minuto++;
-    }
-    if(minuto === 10){
-      minuto = 0;
-      elemento5.innerHTML = minuto1++;
-    }
-    if(minuto1 === 6){
-      minuto1 = 0;
-      elemento3.innerHTML = hora++;
-    }
-    if(hora === 10){
-      hora = 0;
-      elemento6.innerHTML = hora1++;
-    }
-    if(hora1 === 2 && hora === 4){
-      reset()
-    }
-  }
-
-
- let segundo = 0;
- let minuto = 0;
- let hora = 0;
-
- let cron;
-
- function start(){
-     pause();
-  cron = setInterval(function() {
      timer();
-      elemento.innerHTML = segundo++;
-      elemento2.innerHTML = minuto;
-      elemento3.innerHTML = hora;
-    
-     },1000);
-
- }
-
- function pause(){
-     clearInterval(cron);
- }
-
- function reset(){
-     hora = 0;
-     minuto = 0;
-     segundo = 0;
-     document.getElementById('hora').innerText = '00';
-     document.getElementById('minuto').innerText = '00';
-     document.getElementById('segundo').innerText = '00';
 
  }
 
  function timer() { 
-     if(segundo === 60){
-         segundo = 0;
-          elemento2.innerHTML = minuto++;
-     } if(minuto === 60){
-         minuto = 0;
-         elemento3.innerHTML = hora++;
-     }
-    
+  if(segundo === 10){
+      segundo = 0;
+       elemento4.innerHTML = segundo1++;
+  } 
+ if(segundo1 === 6){
+   segundo1 = 0;
+   elemento2.innerHTML = minuto++;
  }
+ if(minuto === 10){
+   minuto = 0;
+   elemento5.innerHTML = minuto1++;
+ }
+ if(minuto1 === 6){
+   minuto1 = 0;
+   elemento3.innerHTML = hora++;
+ }
+ if(hora === 10){
+   hora = 0;
+   elemento6.innerHTML = hora1++;
+ }
+ if(hora1 === 2 && hora === 4){
+   reset()
+ }
+}
+
+
