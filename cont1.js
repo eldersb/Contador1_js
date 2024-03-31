@@ -2,6 +2,7 @@
  let elemento = document.querySelector('#segundo');
  let elemento2 = document.querySelector('#minuto');
  let elemento3 = document.querySelector('#hora');
+<<<<<<< Updated upstream
  let elemento4 = document.querySelector('#segundo1')
  let elemento5 = document.querySelector('#minuto1')
  let elemento6 = document.querySelector('#hora1')
@@ -80,4 +81,48 @@
     }
    
 
+=======
+
+ let segundo = 0;
+ let minuto = 0;
+ let hora = 0;
+
+ let cron;
+
+ function start(){
+     pause();
+  cron = setInterval(function() {
+     timer();
+      elemento.innerHTML = segundo++;
+      elemento2.innerHTML = minuto;
+      elemento3.innerHTML = hora;
+    
+     },1000);
+
+ }
+
+ function pause(){
+     clearInterval(cron);
+ }
+
+ function reset(){
+     hora = 0;
+     minuto = 0;
+     segundo = 0;
+     document.getElementById('hora').innerText = '00';
+     document.getElementById('minuto').innerText = '00';
+     document.getElementById('segundo').innerText = '00';
+
+ }
+
+ function timer() { 
+     if(segundo === 60){
+         segundo = 0;
+          elemento2.innerHTML = minuto++;
+     } if(minuto === 60){
+         minuto = 0;
+         elemento3.innerHTML = hora++;
+     }
+    
+>>>>>>> Stashed changes
  }

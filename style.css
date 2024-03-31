@@ -27,16 +27,42 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< Updated upstream
     width: 20%;
+=======
+    width: 25%;
+>>>>>>> Stashed changes
     height: 300px;
     border: 2px solid;
     border-radius: 50%;
     background-color: whitesmoke;
     margin: 0 auto;
     margin-top: 200px;
+<<<<<<< Updated upstream
 
 }
 
+=======
+
+}
+/* 
+.conteudo {
+  
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px
+    
+}
+
+p {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px solid;
+    color: black;
+    text-align: center;
+} */
+
+>>>>>>> Stashed changes
 .box-child {
     display: flex;
     flex-direction: column;
@@ -44,6 +70,10 @@ h1 {
 }
 
 .tempo {
+<<<<<<< Updated upstream
+=======
+    /* position: relative; */
+>>>>>>> Stashed changes
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +97,11 @@ button {
 @media (max-width: 800px ) {
     .box {
         width: 70%;
+<<<<<<< Updated upstream
 
+=======
+       
+>>>>>>> Stashed changes
     }
 }
 
