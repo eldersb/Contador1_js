@@ -2,7 +2,6 @@
  let elemento = document.querySelector('#segundo');
  let elemento2 = document.querySelector('#minuto');
  let elemento3 = document.querySelector('#hora');
-<<<<<<< Updated upstream
  let elemento4 = document.querySelector('#segundo1')
  let elemento5 = document.querySelector('#minuto1')
  let elemento6 = document.querySelector('#hora1')
@@ -79,9 +78,8 @@
     if(hora1 === 2 && hora === 4){
       reset()
     }
-   
+  }
 
-=======
 
  let segundo = 0;
  let minuto = 0;
@@ -124,5 +122,4 @@
          elemento3.innerHTML = hora++;
      }
     
->>>>>>> Stashed changes
  }
